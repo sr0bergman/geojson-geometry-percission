@@ -1,0 +1,29 @@
+{
+  "name": "geojson-geometry-percission",
+  "version": "1.0.0",
+  "description": "truncate gejson geometry coordinates to a defined precission",
+  "main": "index.js",
+  "dependencies": {
+    "@turf/meta": "^6.0.0-beta.3",
+    "turf": "^3.0.14"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sr0bergman/geojson-geometry-percission.git"
+  },
+  "keywords": [
+    "geojson",
+    "coordinate",
+    "percision"
+  ],
+  "author": "shane bergman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sr0bergman/geojson-geometry-percission/issues"
+  },
+  "homepage": "https://github.com/sr0bergman/geojson-geometry-percission#readme"
+}
