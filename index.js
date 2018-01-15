@@ -9,15 +9,15 @@ Fs.writeFile('output-percision.json', '', (err) => {
 });
 
 
-meta.featureEach(features, function (currentFeature, featureIndex) {
-  	meta.coordEach(currentFeature, function(coords) {
+meta.featureEach(features, (currentFeature, featureIndex) => {
+  	meta.coordEach(currentFeature, (coords) => {
 		
 		let lon = coords[0].toFixed(6)
 		let lat = coords[1].toFixed(6)
 		currentFeature.geometry.coordinates = [lon,lat]
 	});
 	
-	Fs.appendFile('output-percision.json', JSON.stringify(currentFeature) + ',' + '\n',function(){
+	Fs.appendFile('output-percision.json', JSON.stringify(currentFeature) + ',' + '\n', () => {
 		console.log('updated...');
 	});
 
